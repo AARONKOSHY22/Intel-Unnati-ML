@@ -7,9 +7,11 @@ Unsupervised learning represents a class of machine learning algorithms designed
 ### 1. Clustering:
 
 - **K-Means Clustering:** Given a set of observations \((x_1, x_2, ..., x_n)\), where each observation is a d-dimensional real vector, k-means clustering aims to partition the n observations into \(k (\leq n)\) sets \(S = \{S_1, S_2, ..., S_k\}\) so as to minimize the within-cluster sum of squares (WCSS). Mathematically, the objective is to find:
-  $$
+  
+  \[
   \arg\min_S \sum_{i=1}^k \sum_{x \in S_i} ||x - \mu_i||^2
-  $$
+  \]
+  
   where \(\mu_i\) is the mean of points in \(S_i\).
 
 - **Hierarchical Clustering:** This method builds a hierarchy of clusters either agglomeratively (bottom-up) or divisively (top-down). The agglomerative approach is more common, where each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
@@ -33,6 +35,7 @@ Unsupervised learning represents a class of machine learning algorithms designed
 ## Applications in Data Science
 
 Unsupervised learning is pivotal in exploratory data analysis, pattern discovery, anomaly detection, and feature extraction. It serves as a foundation for complex workflows in customer segmentation, recommendation systems, and bioinformatics, where understanding the structure of data can unveil insights leading to informed decision-making and strategic planning.
+
 ```python
 #loading libraries
 import pandas as pd
